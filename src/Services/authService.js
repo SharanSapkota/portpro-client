@@ -1,13 +1,10 @@
+const { headers, SERVERAPI } = require("../Helper/HeaderHelper");
 
 const loginSuccess = async () => {
-   return fetch("http://localhost:4000/auth/login/success", {
+   return fetch(`${SERVERAPI}`, {
     method: "GET",
     credentials: "include",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Credentials": true
-    }
+    headers
   })
         
 };
