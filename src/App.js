@@ -15,7 +15,6 @@ function App() {
      <Routes>
         <Route path='/' element={<PrivateRoute > <Dashboard /> </PrivateRoute>} />
         <Route path='/login' element={ <Login /> } />
-
       </Routes>
     </Router>
   );
